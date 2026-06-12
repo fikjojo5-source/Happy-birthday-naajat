@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Birthday music and celebration soundtrack for Najat">
+  <title>Birthday Music - Happy Birthday NAJAT</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>🎵 Birthday Music</h1>
+      <p class="subtitle">Let the celebration begin!</p>
+    </header>
 
-<div class="container">
+    <section class="music-player">
+      <h2>Enjoy Your Birthday Playlist</h2>
+      <audio controls autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. Please download the music file to listen.
+      </audio>
+    </section>
 
-<h1>🎵 Birthday Music</h1>
-
-<audio controls autoplay loop>
-<source src="music.mp3">
-</audio>
-
-<br><br>
-
-<a href="cartoon.html">
-<button>Cartoon World 🧸</button>
-</a>
-
-</div>
-
+    <footer class="music-footer">
+      <nav>
+        <a href="cartoon.html" class="btn btn-secondary">🧸 Cartoon World</a>
+        <a href="letter.html" class="btn btn-back">← Back</a>
+      </nav>
+    </footer>
+  </main>
 </body>
 </html>
