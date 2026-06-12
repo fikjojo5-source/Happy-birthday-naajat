@@ -1,0 +1,16 @@
+birthday-najat/
+│
+├── index.html
+├── letter.html
+├── gallery.html
+├── cake.html
+├── questions.html
+├── music.html
+├── cartoon.html
+├── surprise.html
+├── style.css
+├── script.js
+├── najat1.jpg
+├── najat2.jpg
+├── najat3.jpg
+└── music.mp3
