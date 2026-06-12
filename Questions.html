@@ -1,44 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fun birthday questions and interactive games for Najat's birthday celebration">
+  <title>Cute Birthday Questions - Happy Birthday NAJAT</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>💕 Cute Questions</h1>
+      <p class="subtitle">Let's have some fun!</p>
+    </header>
 
-<div class="container">
+    <section class="questions-section">
+      <form class="questions-form">
+        
+        <fieldset class="question-group">
+          <legend><h2>Which gift would you love?</h2></legend>
+          <div class="button-group">
+            <button type="button" class="btn btn-gift" aria-label="Choose Teddy Bear as gift">
+              🧸 Teddy Bear
+            </button>
+            <button type="button" class="btn btn-gift" aria-label="Choose Flowers as gift">
+              🌹 Flowers
+            </button>
+            <button type="button" class="btn btn-gift" aria-label="Choose Chocolate as gift">
+              🍫 Chocolate
+            </button>
+          </div>
+        </fieldset>
 
-<h1>💕 Cute Questions</h1>
+        <fieldset class="question-group">
+          <legend><h2>Who is the prettiest birthday girl?</h2></legend>
+          <button type="button" class="btn btn-primary" id="answerBtn" aria-label="Answer the question">
+            ❤️ NAJAT
+          </button>
+          <div id="loveResponse" class="response-message" aria-live="polite" aria-atomic="true"></div>
+        </fieldset>
 
-<h2>Which gift would you love?</h2>
+      </form>
+    </section>
 
-<button>Teddy Bear 🧸</button>
+    <footer class="questions-footer">
+      <nav>
+        <a href="music.html" class="btn btn-secondary">🎵 Music</a>
+        <a href="letter.html" class="btn btn-back">← Back</a>
+      </nav>
+    </footer>
+  </main>
 
-<button>Flowers 🌹</button>
-
-<button>Chocolate 🍫</button>
-
-<h2>Who is the prettiest birthday girl?</h2>
-
-<button onclick="answer()">
-NAJAT ❤️
-</button>
-
-<h3 id="love"></h3>
-
-<br>
-
-<a href="music.html">
-<button>Music 🎵</button>
-</a>
-
-</div>
-
-<script>
-function answer(){
-document.getElementById("love").innerHTML=
-"Correct 😍";
-}
-</script>
-
+  <script>
+    document.getElementById('answerBtn').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('loveResponse').innerHTML = '✨ Correct! You are absolutely amazing! 😍✨';
+    });
+  </script>
 </body>
 </html>
